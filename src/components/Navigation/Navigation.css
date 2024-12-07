@@ -1,0 +1,161 @@
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 40px;
+  background-color: #4a2c20;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+
+.logo a {
+  color: #f7546e; 
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+.logo a::after {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%; 
+  margin-left: 5px;
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: #f7546e; 
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 12px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  background-color: #232323;
+  color: white; 
+}
+
+.login-btn {
+  text-decoration: none;
+  background: linear-gradient(45deg, #f7546e, #ff7e5f); 
+  color: white;
+  padding: 7px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+.login-btn:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+}
+
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .navigation {
+    padding: 10px 20px;
+  }
+}
+
+.login-btn {
+  text-decoration: none;
+  background: linear-gradient(90deg, #f7546e, #ff7e5f);
+  color: white;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+}
+
+.login-btn:hover {
+  transform: scale(1.05); 
+  background: linear-gradient(90deg, #ff7e5f, #f7546e); 
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); 
+}
+/* Profile Section */
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Avatar Container */
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Round avatar */
+  overflow: hidden; /* Ensures the image fits within the circle */
+  border: 2px solid #f7546e; /* Adds a border around the avatar */
+}
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image scales properly */
+}
+
+/* Username Style */
+.user-name {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: rgba(247, 84, 110, 0.1); /* Adds a subtle pink background */
+  padding: 5px 10px;
+  border-radius: 10px; /* Rounded corners for the name */
+}
+
+/* Login/Logout Button */
+.login-btn {
+  text-decoration: none;
+  background: linear-gradient(90deg, #f7546e, #ff7e5f); /* Gradient background */
+  color: white;
+  padding: 8px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px; /* Smooth, pill-shaped button */
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.login-btn:hover {
+  transform: scale(1.05); /* Enlarges slightly on hover */
+  background: linear-gradient(90deg, #ff7e5f, #f7546e); /* Reverse gradient on hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}

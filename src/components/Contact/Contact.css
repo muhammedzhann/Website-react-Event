@@ -1,0 +1,225 @@
+:root {
+  --contact-primary-color: #f7546e; /* Accent color for buttons and highlights */
+  --contact-secondary-color: #ff7e5f; /* Lighter hover color */
+  --contact-bg-color: #f9f9f9; /* Background color */
+  --contact-text-color: #333; /* Neutral text color */
+  --contact-border-radius: 8px; /* Standard border radius */
+  --contact-icon-size: 20px; /* Icon size */
+  --contact-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Container */
+.contact-container {
+  margin-top: 7%;
+  width: 100%;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Wrapper */
+.contact-wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Page Title */
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 32px;
+  color: #f7546e;
+  font-weight: bold;
+}
+
+/* Content Layout */
+.contact-content {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Contact Form */
+.contact-form {
+  flex: 1;
+  max-width: 500px;
+  background-color: white;
+  padding: 20px;
+  border-radius: var(--contact-border-radius);
+  box-shadow: var(--contact-shadow);
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+  color: var(--contact-primary-color);
+  font-size: 24px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: var(--contact-border-radius);
+  font-size: 14px;
+  color: var(--contact-text-color);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--contact-primary-color);
+  box-shadow: 0 0 4px rgba(247, 84, 110, 0.5);
+}
+
+.contact-form button {
+  padding: 12px 20px;
+  background-color: var(--contact-primary-color);
+  color: white;
+  border: none;
+  border-radius: var(--contact-border-radius);
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form button:hover {
+  background-color: var(--contact-secondary-color);
+  transform: scale(1.05);
+}
+
+.success-message {
+  color: var(--contact-primary-color);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+/* Contact Details */
+.contact-details {
+  flex: 1;
+  max-width: 500px;
+  background-color: white;
+  padding: 20px;
+  border-radius: var(--contact-border-radius);
+  box-shadow: var(--contact-shadow);
+}
+
+.contact-details h2 {
+  margin-top: 25px;
+  margin-bottom: 5px;
+  color: var(--contact-primary-color);
+  font-size: 24px;
+}
+
+.contact-details p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--contact-text-color);
+  margin: 10px 0;
+}
+
+.contact-details .icon {
+  font-size: var(--contact-icon-size);
+  color: var(--contact-primary-color);
+}
+
+/* Social Media Links */
+.social-media-links {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.social-media-links a {
+  color: var(--contact-text-color);
+  font-size: var(--contact-icon-size);
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.social-media-links a:hover {
+  color: var(--contact-primary-color);
+  transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form,
+  .contact-details {
+    max-width: 100%;
+  }
+}
+/* Social Media Links Section */
+.social-media-links {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.social-media-links a {
+  color: var(--contact-text-color);
+  font-size: 20px;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.social-media-links a:hover {
+  color: var(--contact-primary-color);
+  transform: scale(1.2);
+}
+
+/* Detailed Social Links Section */
+.detailed-social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.detailed-social-links a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--contact-text-color);
+  font-size: 16px;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.detailed-social-links a:hover {
+  color: var(--contact-primary-color);
+  transform: scale(1.05);
+}
+
+.detailed-social-links .instagram-link i,
+.detailed-social-links .twitter-link i,
+.detailed-social-links .facebook-link i,
+.detailed-social-links .linkedin-link i {
+  font-size: 20px;
+  color: var(--contact-primary-color);
+}
